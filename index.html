@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Connected Program Enterprise Search Conitinuous Integration Walkthrough</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,20 +40,421 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+				<section data-background-transition="fade">
+					<img data-src="images/Connected-logo.png" alt="Down arrow">
+					<h1>Enterprise Search</h1>
+					<h3>Continuous Integration Walkthrough</h3>
+					<p><i>with Emphasis on Collaboration with HipChat</i></p>
+					<p><small>Presented by <a href="">Bode Fuwa</a> / <a href="">bfuwa@allegisgroup.com</a> / <a href="http://allegis.hipchat.com/hakimel">@BodeFuwa</a></small></p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+				  <section data-background-transition="concave">
+					  <h2>Discussion Agenda</h2>
+			    </section>
+			    <section data-background-transition="concave">
+			 	    <h2>Discussion Agenda</h2>
+				    <p>Continuous Integration implemented with the Atlassian stack</p>
+						<p><img data-src="images/bamboo_rgb_blue.png" height="50" alt="Down arrow"><img data-src="images/download.png" height="50" alt="Down arrow"></p>
+						<p><img data-src="images/jira-logo.png" height="50" alt="Down arrow"><img data-src="images/hipchat-logo.png" height="50" alt="Down arrow"></p>
+		      </section>
+		      <section data-background-transition="concave">
+			      <h2>Discussion Agenda</h2>
+			      <p>Bamboo Overview</p>
+						<p>Automated Builds and Deployments</p>
+					  <img data-src="images/bamboo.png" alt="Presentation Image">
+	        </section>
+	        <section data-background-transition="concave" data-background="images/atlassian-stack.png">
+		        <h2>Discussion Agenda</h2>
+		        <h3  class="fragment shrink">Collaboration and Integration <br>with HipChat</h3>
+		        <ul>
+				      <li class="fragment shrink">Integration with Bamboo - Automated Builds <br>and Deployments Notifications</li>
+				      <li class="fragment shrink">Integration with Confluence - Collaboration: Documentation, Knowledge Base</li>
+				      <li class="fragment shrink">Integration with Jira - Collaboration: Issue Tracking</li>
+			      </ul>
+		      </section>
 				</section>
+
+		<section>
+			<section>
+				<img data-src="images/Connected-logo.png" alt="Presentation Image">
+				<h2>Continuous Integration Overview</h2>
+				<p><img data-src="images/devops-humor.jpg" alt="Presentation Image"></p>
+			</section>
+			<section>
+				<p>The technical implementation of Agile</p>
+			</section>
+			<section>
+				<p>Promotes incremental development and traceability.<p>
+			</section>
+		</section>
+
+		<section>
+			<section>
+	      <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Continuous Integration Overview</h2>
+		  </section>
+			<section>
+	      <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Continuous Integration starts with issues</h2>
+			  <p class="fragment highlight-blue grow">A new issue is created and assigned an issue number in Jira<p>
+		  </section>
+  		<section>
+	      <img data-src="images/Connected-logo.png" alt="Presentation Image">
+		  	<h2>... and continues in development</h2>
+			  <p>
+				  Developers work on Jira issues assigned to them and commit code
+				  changes to a version controlled repository
+			    <small class="fragment highlight-blue grow">
+					  Best practices note: include Jira issue number in code
+					  <br>
+				  	Example: ES-440: Fixed typo in label field
+				  </small>
+			  <p>
+		  </section>
+			<section>
+	      <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>...then concludes in documentation</h2>
+			  <p class="fragment highlight-blue grow">Documentation includes release notes in Bamboo</p>
+				<p class="fragment highlight-blue grow">Notifications in HipChat</p>
+		  </section>
+		</section>
+
+		<section>
+			<section>
+	      <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>CI with Bamboo Overview</h2>
+				<img data-src="images/bamboo.png" alt="Presentation Image">
+		  </section>
+		  <section>
+	      <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Bamboo handles 2 major tasks</h2>
+			  <p>
+				  <ul>
+					  <li class="fragment highlight-blue grow">Build activities</li>
+					  <li class="fragment highlight-blue grow">Deployment activities</li>
+				  </ul>
+			  <p>
+  		</section>
+  		<section data-background="images/bamboo-build-plans.png">
+	    </section>
+  		<section data-background="images/bamboo-release.png">
+	  	</section>
+  		<section data-background="images/bamboo-deploy-pipeline.png">
+	    </section>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<br>
+			<img data-src="images/whats-hipchat-campaign.png" alt="Presentation Image">
+			<p>
+			</p>
+		</section>
+
+		<section>
+			<section>
+			  <h2>Real-time Collaboration</h2>
+			  <p>HipChat consolidates streams of information, that goes beyond email<p>
+			</section>
+			<section>
+				<img data-src="images/hipchat-logo.png">
+				<h2>Seamless Integration</h2>
+			  <p>Brings notifications (Jira, Confluence, Bamboo) together
+			  in a single place, with relative ease</p>
+			</section>
+			<section>
+				<img data-src="images/hipchat-logo.png">
+				<h2>Ease of Use</h2>
+			  <p class="fragment highlight-blue grow">Robust enough to handle images, videos, and documents</p>
+			  <p class="fragment highlight-blue grow"><small>Most media formats can be added by copy and paste</small></p>
+			</section>
+		</section>
+
+	  <section>
+			<section>
+			  <h2>Getting Started With HipChat</h2>
+			  <p>2 ways to Connect to HipChat</p>
+		  </section>
+			<section>
+			  <h3>1) By Signing In (Must already have an account)</h3>
+			  <img data-src="images/hipchat-login.png" alt="Presentation Image">
+				<p>
+					<small class="fragment highlight-blue grow">Note: HipChat is cloud hosted. Your JIRA account doesn't integrate.</small>
+				</p>
+			</section>
+			<section>
+			  <h3>2) By Invitation</h3>
+			  <img data-src="images/hipchat-invite.png" alt="Presentation Image">
+			</section>
+		</section>
+
+		<section>
+			<section>
+			  <h2>HipChat Dashboard Overview</h2>
+			  <img data-src="images/hipchat-home.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-home.png">
+		  </section>
+		  <section>
+		    <h2>HipChat People Tab</h2>
+			  <img data-src="images/hipchat-people.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-people.png">
+		  </section>
+		  <section>
+			  <h2>HipChat Rooms Tab</h2>
+			  <img data-src="images/hipchat-rooms.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-rooms.png">
+		  </section>
+      <section>
+		    <h2>HipChat Emoticons Tab</h2>
+			  <img data-src="images/hipchat-emoticons.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-emoticons.png">
+		  </section>
+			<section>
+				<h2>Emoticons make HipChat Expressive</h2>
+			  <img data-src="images/hipchat-humor5.jpg" alt="Presentation Image">
+		  </section>
+		</section>
+
+		<section>
+			<section>
+				<img data-src="images/Connected-logo.png" alt="Presentation Image">
+				<h2>HipChat Configuration Overview</h2>
+			</section>
+			<section>
+		    <h2>HipChat Profile Setup</h2>
+			  <img data-src="images/hipchat-profile.png" alt="Presentation Image">
+      </section>
+			<section data-background="images/hipchat-profile.png">
+		  </section>
+		  <section>
+			  <h2>HipChat Settings</h2>
+			  <img data-src="images/hipchat-settings.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-settings.png">
+		  </section>
+			<section data-background="images/hipchat-room.png">
+		  </section>
+		  <section>
+			  <h2>HipChat Room Setup</h2>
+			  <img data-src="images/hipchat-create-room.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-create-room.png">
+		  </section>
+		  <section>
+		    <h2>HipChat Room Types</h2>
+			  <img data-src="images/hipchat-room-type.png" alt="Presentation Image">
+				<p>
+					<small class="fragment highlight-blue grow">Note: Private rooms require an administrator.</small>
+				</p>
+		  </section>
+			<section data-background="images/hipchat-room-type.png">
+		  </section>
+	  </section>
+
+		<section>
+			<section>
+				<h2>HipChat Collaboration Overview</h2>
+			</section>
+			<section>
+			  <h2>HipChat One-on-One Chat</h2>
+			  <img data-src="images/hipchat-one-on-one.png" alt="Presentation Image">
+				<p class="fragment highlight-blue grow"><small>Note: use "@username" to mention or alert a specific user in a room of your message</small></p>
+		  </section>
+		  <section>
+			  <h2>HipChat Group Chat</h2>
+			  <img data-src="images/hipchat-group-chat.png" alt="Presentation Image">
+				<p class="fragment highlight-blue grow"><small>Note: use "@all" to notify all members of the room of your message</small></p>
+		  </section>
+		  <section>
+		    <h2>HipChat Invitation</h2>
+			  <img data-src="images/hipchat-invite.png" alt="Presentation Image">
+		  </section>
+	  </section>
+
+		<section>
+		  <section>
+			  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>HipChat Integration Overview</h2>
+			  <img data-src="images/atlassian-integration.png" alt="Presentation Image">
+		  </section>
+		  <section>
+			  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Integration with Jira</h2>
+			  <img data-src="images/hipchat-jira-notifications.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-jira-notifications.png">
+		  </section>
+		  <section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Integration with Jira</h2>
+		 	  <p>
+			    <ul>
+			      <li>Issue creation</li>
+				    <li>Issue status updates</li>
+			      <li>Issue assignments</li>
+			      <li>Issue comments</li>
+				    <li>Other issue activities; attachments</li>
+			    </ul>
+		    </p>
+		  </section>
+		  <section>
+			  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Integration with Bamboo</h2>
+			  <img data-src="images/hipchat-bamboo-notifications.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-bamboo-notifications.png">
+		  </section>
+		  <section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Integration with Bamboo</h2>
+			  <p>
+			    <ul>
+				    <li>Build notifications</li>
+					  <li>Build status</li>
+					  <li>Deploment notifications</li>
+					  <li>Deployment status</li>
+				  </ul>
+			  <p>
+		  </section>
+		  <section>
+			  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Integration with Confluence</h2>
+			  <img data-src="images/hipchat-group-chat.png" alt="Presentation Image">
+		  </section>
+			<section data-background="images/hipchat-group-chat.png">
+		  </section>
+		  <section>
+			  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>Integration with Confluence</h2>
+			  <p>
+			    <ul>
+				    <li>Page creation and update notifications</li>
+				  	<li>Comments notifications</li>
+			    </ul>
+			  </p>
+		  </section>
+    </section>
+
+		<section>
+			<section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>How to Maximize HipChat's Value</h2>
+		  </section>
+		  <section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>How to Maximize HipChat's Value</h2>
+			  <ul>
+				  <li class="fragment highlight-blue grow">Integrate JIRA projects to HipChat</li>
+			  </ul>
+		  </section>
+			<section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>How to Maximize HipChat's Value</h2>
+			  <ul>
+				  <li>Integrate JIRA Projects with HipChat</li>
+					<li class="fragment highlight-blue grow">Integrate Confluence spaces to HipChat</li>
+			  </ul>
+		  </section>
+			<section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>How to Maximize HipChat's Value</h2>
+				<ul>
+				  <li>Integrate JIRA projects with HipChat</li>
+					<li>Integrate Confluence spaces with HipChat</li>
+					<li class="fragment highlight-blue grow">Drive discussions through HipChat instead of just emails</li>
+			  </ul>
+		  </section>
+			<section>
+		    <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			  <h2>How to Maximize HipChat's Value</h2>
+				<ul>
+				  <li>Integration JIRA projects with HipChat</li>
+					<li>Integration Confluence spaces with HipChat</li>
+					<li>Drive discussions through HipChat instead of just emails</li>
+					<li class="fragment highlight-blue grow">Create objective-specific rooms. Eg. Builds, Sprints, etc
+						<small>Note: No limit on creating rooms, but be practical</small>
+					</li>
+				</ul>
+		  </section>
+			<section>
+				<img data-src="images/Connected-logo.png" alt="Presentation Image">
+				<h2>How to Maximize HipChat's Value</h2>
+				<ul>
+					<li>Integration JIRA projects with HipChat</li>
+					<li>Integration Confluence spaces with HipChat</li>
+					<li>Drive discussions through HipChat instead of just emails</li>
+					<li>Create objective-specific rooms. Eg. Builds, Sprints, etc
+						<small>Note: No limit on creating rooms, but be practical</small>
+					</li>
+					<li class="fragment highlight-blue grow">Active HipChat rooms can become noisy, use silencer
+						<small>Note: Turn off notifications to busy rooms such as jira activity and build notifications rooms</small></li>
+				</ul>
+			</section>
+	  </section>
+
+		<section>
+			<img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>Next Steps</h2>
+				<p class="fragment highlight-blue grow">Sign In (if you have an account) or Request Invitation</p>
+				<p class="fragment highlight-blue grow">Request Jira Board integration with HipChat</p>
+				<p class="fragment highlight-blue grow">Request Confluence Space integration with HipChat</>
+		</section>
+
+		<section>
+			<img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>Questions??</h2>
+			  <p>Thank you</p>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>Collaboration with HipChat</h2>
+			<p></p>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>Sign Up</h2>
+			<p><img data-src="images/Connected-logo.png" alt="Presentation Image"></p>
+		</section>
+
+	  <section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>Benefits of HipChat over other Communication media</h2>
+			<p></p>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>Chatrooms</h2>
+			<p>
+			  <ul>
+ 				  <li>Public</li>
+					<li>Private</li>
+				</ul>
+			</p>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>HipChat integration with Jira</h2>
+			<p></p>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>HipChat integration with Confluence</h2>
+		</section>
+
+		<section>
+		  <img data-src="images/Connected-logo.png" alt="Presentation Image">
+			<h2>HipChat integration with Bamboo</h2>
+		</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
@@ -366,6 +767,7 @@ Reveal.addEventListener( 'customevent', function() {
 						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
 					</ul>
 				</section>
+
 
 				<section style="text-align: left;">
 					<h1>THE END</h1>
